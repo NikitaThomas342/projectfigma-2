@@ -26,13 +26,13 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
+              <a class="nav-link active" href="index.html">Home</a>
             </li>
           </ul>
 
         </div>
         <div id="bag">
-          <img src="img/bag.png">
+          <img src="img/bag.png" onclick="location.href = 'bag.html';">
         </div>
       </div>
     </nav>
@@ -90,21 +90,21 @@
       <li class="breadcrumb-item"><a href="#">Woman</a></li>
       <li class="breadcrumb-item"><a href="#">Football</a></li>
       <li class="breadcrumb-item"><a href="#">Jerseys</a></li>
-      <li class="breadcrumb-item active" aria-current="page">Nike F.C. Women's Tie-Dye Football Shirt</a></li>
+      <li class="breadcrumb-item active" aria-current="page" id="beadcrumb-name"></a></li>
     </ol>
   </nav>
 
   <div class="productdetail">
     <div class="d-flex flex-row justify-content-center">
       <div class="p-2">
-        <img src="img/Bitmap2.png" style="width: 749px; height: 749px;">
+        <img id="product-img" style="width: 749px; height: 749px;">
       </div>
       <div class="p-2">
         <p>
-        <h5>Nike F.C. Women's Tie-Dye Football Shirt</h5>
+        <h5 id="product-name"></h5>
         </p>
         <p>
-        <h4><b>2,500 THB</b></h4>
+        <h4><b id="product-price"></b></h4>
         </p>
         <p>
         <h6>Size</h6>
@@ -112,18 +112,14 @@
         <!--Select Size-->
         <div id="select">
           <select class="form-select" aria-label="Default select example">
-            <option selected>Please Select</option>
-            <option value="1">S</option>
-            <option value="2">M</option>
-            <option value="3">L</option>
-            <option value="4">XL</option>
+            
           </select>
         </div>
         <!-- Button1 -->
         <div class="form-group1">
           <label class="col-md-4 control-label" for="singlebutton"></label>
           <div class="col-md-4 center-block">
-            <button id="singlebutton" name="singlebutton" class="btn btn-dark center-block">Add To Bag</button>
+            <button id="addtobag" name="singlebutton" class="btn btn-dark center-block">Add To Bag</button>
           </div>
         </div>
         <!--Product Details-->
@@ -133,18 +129,7 @@
           </p>
         </div>
         <div class="details">
-          <p>The Nike F.C. Shirt blends 2 summer favourites: festivals and football.Soft, sweat-wicking fabric and a
-            mesh racerback help you stay comfortable on the pitch or in the crowd.</p>
-          <p>● Colour Shown: Black/Volt/White</p>
-          <p>● Style: CK7843-010</p>
-        </div>
-        <!-- Button2 -->
-        <div class="form-group2">
-          <label class="col-md-4 control-label" for="singlebutton"></label>
-          <div class="col-md-4 center-block">
-            <button id="singlebutton" name="singlebutton" class="btn btn-white center-block"><b>Show More
-                Details</b></button>
-          </div>
+          <p id="product-detail"></p>
         </div>
       </div>
     </div>

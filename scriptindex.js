@@ -28,7 +28,6 @@ const getshowProducts = async () => {
     try{
         let response = await axios.get('https://6102d7aa79ed680017482359.mockapi.io/productlist')
         let product = response.data
-        console.log('product',product)
         document.getElementById('productdisplay').innerHTML = 
             `<div class="container">
                 <div class="d-inline-flex flex-wrap flex-row justify-content-around">
