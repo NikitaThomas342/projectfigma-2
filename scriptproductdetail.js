@@ -32,7 +32,7 @@ const getshowproductdetail = async () => {
 getshowproductdetail()
 
 function addItem(id,name,price,size,image,detail) {
-    var oldItems = JSON.parse(localStorage.getItem('product')) || [];
+    var oldItems = JSON.parse(localStorage.getItem('items')) || [];
     
     var newItem = {
         "id":id,
@@ -45,5 +45,5 @@ function addItem(id,name,price,size,image,detail) {
     
     let finItem = oldItems.concat(newItem);
     
-    localStorage.setItem('product', JSON.stringify(finItem));
+    localStorage.setItem('items', JSON.stringify(finItem));
 };

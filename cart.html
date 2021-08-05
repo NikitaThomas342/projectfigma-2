@@ -32,7 +32,7 @@
 
                 </div>
                 <div id="bag">
-                    <img src="img/bag.png" onclick="location.href = 'bag.html';">
+                    <img src="img/bag.png" onclick="location.href = 'cart.html';">
                 </div>
             </div>
         </nav>
@@ -41,136 +41,79 @@
         <img src="img/bag.png">
     </div>
 
-    <div class="bag">
+        <!--Title-->
+            
         <div class="textbag">
             <p>
             <h3><b>Bag</b></h3>
             </p>
         </div>
-        <!--item 1-->
-        <div class="d-flex flex-row justify-content-center">
-            <div class="p-2">
-                <img src="img/Bitmap2.png" id="productinbag-img" style="width: 230px; height: 230px;">
-            </div>
-            <div class="p-2 col-7">
-                <p>
-                <h4><b>2,500 THB</b></h4>
-                </p>
-                <p>
-                <h5><b>Nike F.C. Women's Tie-Dye Football Shirt</b></h5>
-                </p>
-                <div class="d-flex flex-row justify-content-center">
-                    <div class="selectsize">
-                        <p>Size
-                            <select class="form-select" id="size" aria-label="Default select example">
-                                <option selected>...</option>
-                                <option value="1">Small</option>
-                                <option value="2">Medium</option>
-                                <option value="3">Large</option>
-                            </select>
-                        </p>
-                    </div>
-                    <div class="selectquantity">
-                        Quantity
-                        <select class="form-select" id="quantity" aria-label="Default select example">
-                            <option selected>...</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="removeitem1">
-                    <p>
-                    <h6><b>Remove this item</b></h6>
-                    </p>
+        
+        
+        <div class="d-flex flex-row justify-content-around">
+            
+            <div class="d-flex flex-column">
+                <div id="output">
+
                 </div>
             </div>
+
+            <!--Summary-->
             <div class="p-2">
-                <div class="rectangle">
-                    <div class="summary">
-                        <p>
-                        <h3><b>Summary</b></h3>
-                        </p>
-                        <p>
-                        <h5><b>Subtotal</b></h5>
-                        </p>
-                        <div class="sumprice">
-                            <p>
-                            <h5><b>35,000</b></h5>
-                            </p>
-                        </div>
-
-                        <div class="sumpath"></div>
-
-                        <div class="sumtotal">
-                            <p>
-                            <h5><b>Total</b></h5>
-                            </p>
-                        </div>
-                        <div class="sumprice2">
-                            <p>
-                            <h5><b>35,000</b></h5>
-                            </p>
-                        </div>
-                        <!--btn checkout-->
-                        <div class="form-group1">
-                            <label class="col-md-4 control-label" for="singlebutton"></label>
-                            <div class="col-md-4 center-block">
-                                <button id="checkout" name="singlebutton"
-                                    class="btn btn-dark center-block">Checkout</button>
+                <div class="d-flex justify-content-center">
+                    <div class="p-2">
+                        <div class="rectangle">
+                            <div class="summary">
+                                <div class="d-flex flex-column">
+                                    <div class="p-2">
+                                        <h3>Summary</h3>
+                                    </div>
+                                    <div class="p-2">
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <div class="p-2">
+                                                <h5>Subtotal</h5>
+                                            </div>
+                                            <div class="p-2">
+                                                <h5 id="subtotal"></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="p-2 line"></div>
+                                    <div class="p-2">
+                                        <div class="d-flex flex-row justify-content-between">
+                                            <div class="p-2">
+                                                <h5>Total</h5>
+                                            </div>
+                                            <div class="p-2">
+                                                <h5 id="total"></h5>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="p-2">
+                                        <div class="form-group1">
+                                            <label class="col-md-4 control-label" for="singlebutton"></label>
+                                            <div class="col-md-4 center-block">
+                                                <button id="checkout" name="singlebutton"
+                                                    class="btn btn-dark center-block">Checkout</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            
         </div>
 
-        <div class="path1"></div>
-
-        <!--item 2-->
-        <div class="d-flex flex-row justify-content-center">
-            <div class="p-2 col-4">
-                <img src="img/Bitmap8.png" id="productinbag-img" style="width: 230px; height: 230px;">
-            </div>
-            <div class="p-2 col-7">
-                <p>
-                <h4><b>2,500 THB</b></h4>
-                </p>
-                <p>
-                <h5><b>Jordan x Paris Saint-Germain 2019/20 Stadium Away</b></h5>
-                </p>
-                <div class="d-flex flex-row justify-content-around">
-                    <div class="selectsize">
-                        <p>Size
-                            <select class="form-select" id="size" aria-label="Default select example">
-                                <option selected>...</option>
-                                <option value="1">Small</option>
-                                <option value="2">Medium</option>
-                                <option value="3">Large</option>
-                            </select>
-                        </p>
-                    </div>
-                    <div class="selectquantity">
-                        Quantity
-                        <select class="form-select" id="quantity" aria-label="Default select example">
-                            <option selected>...</option>
-                            <option value="1">1</option>
-                            <option value="2">2</option>
-                            <option value="3">3</option>
-                        </select>
-                    </div>
-                </div>
-                <div id="removeitem2">
-                    <p>
-                    <h6><b>Remove this item</b></h6>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
+        
 
 
 </body>
-
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="scriptcart.js"></script>
 </html>

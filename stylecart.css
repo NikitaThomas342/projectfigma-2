@@ -72,57 +72,10 @@
      color:lightgray;
 }
 
-.img {
-    position:absolute;
-    width: 749px;
-    height: 937.12px;
-    left: 117px;
-    top: 216px;
-}
-
-h4 {
-    position: absolute;
-    height: 36px;
-    font-family: Barlow;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 30px;
-    line-height: 36px;
-    letter-spacing: 0.15px;
-    color: #B02B2B;
-    text-decoration: bold;
-}
-
-h5 {
-    position: absolute;
-    padding-top: 40px;
-    height: 22px;
-    font-family: Barlow;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    letter-spacing: 0.09px;
-    color: #000000;
-    text-decoration: bold;
-}
-
-h6 {
-    position: absolute;
-    top: 285px;
-    height: 17px;
-    font-family: Barlow;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 17px;
-    letter-spacing: 0.07px;
-    color: #FF4E4E;
-    text-decoration: bold;
-}
-
 .textbag {
-    margin-left: 40px;
+    margin-left: 100px;
+    margin-top:20px;
+    margin-bottom: 20px;
 }
 
 .bag {
@@ -133,48 +86,8 @@ h6 {
     top: 104px;
 }
 
-.rectangle {
-    position: absolute;
-    width: 380px;
-    height: 400px;
-    margin-left: 400px;
-    background: #D8D8D8;
-}
-
-.summary {
-    margin-left: 20px;
-}
-
-.selectsize {
-    margin-top: 90px;
-    margin-left: -125px;
-    width: 210px;
-    height: 50px;
-}
-
-.selectquantity {
-    margin-top: 90px;
-    margin-left: 20px;
-    width: 90px;
-    height: 50px;
-}
-
-#size {
-    width: 210px;
-    height: 50px;
-}
-
-#quantity {
-    width: 90px;
-    height: 50px;
-}
-
 .path1 {
     border-radius: 10px;
-}
-
-#removeitem2 {
-    margin-top: 100px;
 }
 
 .sumprice {
@@ -190,8 +103,6 @@ h6 {
 }
 
 #checkout {
-    position: absolute;
-    margin-top: 110px;
     width: 340px;
     height: 50px;
     font-family: Barlow;
@@ -202,4 +113,25 @@ h6 {
     text-align: center;
     letter-spacing: 0.08px;
     color: #FFFFFF;
+}
+
+.removeitem{
+    color:crimson;
+    text-decoration:none;
+}
+
+.price{
+    color:crimson;
+}
+
+.type{
+    color:grey;
+}
+
+.rectangle{
+    background-color:lightgray;
+    padding:20px;
+}
+.line{
+    border-bottom:1px solid gray;
 }
