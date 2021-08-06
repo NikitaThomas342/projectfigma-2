@@ -85,7 +85,7 @@
     </nav>
   </div>
 
-  <nav aria-label="breadcrumb" style="margin-left: 120px;">
+  <nav aria-label="breadcrumb" id="breadcrumb" style="margin-left: 120px;">
     <ol class="breadcrumb">
       <li class="breadcrumb-item"><a href="#">Woman</a></li>
       <li class="breadcrumb-item"><a href="#">Football</a></li>
@@ -93,11 +93,13 @@
       <li class="breadcrumb-item active" aria-current="page" id="beadcrumb-name"></a></li>
     </ol>
   </nav>
+  
 
+  <!--For Max Width-->
   <div class="productdetail">
-    <div class="d-flex flex-row justify-content-center">
+    <div class="d-flex flex-row justify-content-center" id="displayblock">
       <div class="p-2">
-        <img id="product-img" style="width: 749px; height: 749px;">
+        <img id="product-img">
       </div>
       <div class="p-2">
         <p>
@@ -109,19 +111,21 @@
         <p>
         <h6>Size</h6>
         </p>
-        <!--Select Size-->
-        <div id="select">
-          <select class="form-select" aria-label="Default select example">
+          <!--Select Size-->
+          <div id="select">
+            <select class="form-select" aria-label="Default select example">
 
-          </select>
-        </div>
-        <!-- Button1 -->
-        <div class="form-group1">
-          <label class="col-md-4 control-label" for="singlebutton"></label>
-          <div class="col-md-4 center-block">
-            <button id="addtobag" name="singlebutton" class="btn btn-dark center-block">Add To Bag</button>
+            </select>
           </div>
-        </div>
+          <!-- Button1 -->
+          <div class="form-group1">
+            <label class="col-md-4 control-label" for="singlebutton"></label>
+            <div class="col-md-4 center-block">
+              <button id="addtobag" name="singlebutton" class="btn btn-dark center-block">Add To Bag</button>
+            </div>
+          </div>
+        
+        
         <!--Product Details-->
         <div class="productdetails">
           <p>
@@ -133,17 +137,18 @@
         </div>
       </div>
     </div>
+  </div>
 
-    <div class="footer">
-      <footer class="text-center text-lg-start bg-light text-muted">
-        <div class="text-center p-3" id="footer-left">
-          Copyright © Jersey Shop
-        </div>
-        <div class="text-center p-3" id="footer-right">
-          Privacy & Cookie | T&C | Accessibility
-        </div>
-      </footer>
-    </div>
+  <div class="footer">
+    <footer class="text-center text-lg-start bg-light text-muted">
+      <div class="text-center p-3" id="footer-left">
+        Copyright © Jersey Shop
+      </div>
+      <div class="text-center p-3" id="footer-right">
+        Privacy & Cookie | T&C | Accessibility
+      </div>
+    </footer>
+  </div>
 
 
 </body>

@@ -47,3 +47,24 @@ function addItem(id,name,price,size,image,detail) {
     
     localStorage.setItem('items', JSON.stringify(finItem));
 };
+
+
+window.addEventListener('resize',function(){
+    const block = document.getElementById('displayblock')
+    const form = document.querySelector('.form-select')
+    const addbag = document.getElementById('addtobag')
+    let w = document.documentElement.clientWidth
+    if(w<=1150){
+        block.classList.remove('flex-row')
+        block.classList.add('flex-column')
+        block.classList.add('align-items-center')
+        form.style.width='150px'
+        addbag.style.width='150px'
+    }else{
+        block.classList.add('flex-row')
+        block.classList.remove('flex-column')
+        block.classList.remove('align-items-center')
+        form.style.width='350px'
+        addbag.style.width='350px'
+    }
+})

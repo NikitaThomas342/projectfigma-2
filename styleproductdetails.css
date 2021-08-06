@@ -1,24 +1,44 @@
 @media only screen and (max-width: 1140px) {
+    #navtop {
+        display:none;
+    } 
     #navbottom {
         display:none;
     } 
-    #navtop {
+    #breadcrumb {
         display:none;
     }
     #bag2 {
         display:block;
     }
+    #product-img{
+        width: 300px; 
+        height: 300px;
+    }
+    #display1{
+        display:none;
+    }
+    #display2{
+        display:block;
+    }
 }
 
 @media only screen and (min-width:1140px) {
-     #navbotton {
-         display:block;
-    }
      #navtop {
          display:block;
     }
-     #bag2 {
+    #navbottom {
+        display:block;
+   }
+    #breadcrumb {
+        display:block;
+    }
+    #bag2 {
          display:none;
+    }
+    #product-img{
+        width: 749px; 
+        height: 749px;
     }
 }
 
@@ -85,6 +105,7 @@
     left: 117px;
     top: 216px;
 }
+
 
 .breadcrumb .breadcrumb-item active {
     position: absolute;
@@ -174,4 +195,8 @@ h6 {
 
 .footer {
     padding-top: 300px;
+}
+
+#breadcrumb{
+    margin-top:10px;
 }

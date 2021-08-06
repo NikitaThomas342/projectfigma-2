@@ -30,13 +30,22 @@ const getshowProducts = async () => {
         let product = response.data
         document.getElementById('productdisplay').innerHTML = 
             `<div class="container">
-                <div class="d-inline-flex flex-wrap flex-row justify-content-around">
+                <div class="d-inline-flex flex-wrap flex-row justify-content-start">
                     ${product.map((prod)=>{
-                        return `<div class="">
-                                    <div class="card" style="width: 18rem;"> <img src="${prod.prdImageUrl}" class="card-img-top" alt="..." onclick="location.href = 'productDetail.html?id=${prod.id}';">
+                        return `<div class="me-4">
+                                    <div class="card text-center" style="width: 18rem;"> <img src="${prod.prdImageUrl}" class="card-img-top" alt="...">
                                         <div class="card-body">
                                             <h6 class="card-title">${prod.prdname}</h6>
-                                            <p class="card-text price">$${prod.prdPrice}</p>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <p class="card-text price pt-2" style="color:crimson";>$${prod.prdPrice}</p>
+                                                    </div>
+                                                    <div class="col">
+                                                        <button type="button" onclick="location.href = 'productDetail.html?id=${prod.id}';" class="btn btn-dark">Add</button>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>`
