@@ -74,3 +74,7 @@ function deleteItem(index){
     totalprice = 0
     getCartItems()
 }
+
+document.getElementById('checkout').addEventListener('click',function(){
+    location.href = `payment.html?price=${totalprice}`;
+})
