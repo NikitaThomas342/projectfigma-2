@@ -2,7 +2,6 @@ var totalprice = 0
 const output = document.getElementById('output')
 const getCartItems = async () =>{
     const items = JSON.parse(localStorage.getItem('items'))
-    console.log(items.length)
     for(let i = 0;i<items.length;i++){
         try{
             let temp = `<div class="p-2">
@@ -53,7 +52,11 @@ const getCartItems = async () =>{
             output.innerHTML += temp
             let id = 'item' + i
             document.getElementById(id).addEventListener('click',function(){
-                deleteItem(i)
+                var r = confirm('Delete item?')
+                if(r){
+                    deleteItem(i)
+                }
+                alert('Delete Success')
             })
             totalprice += parseInt(items[i].prdPrice)
         } catch (error) {
