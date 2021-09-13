@@ -1,13 +1,13 @@
-let price = new URLSearchParams(window.location.search).get("price")
+let price = new URLSearchParams(window.location.search).get("price");
 
-document.getElementById('subtotal').innerHTML = price
-document.getElementById('total').innerHTML = price
-document.getElementById('confirm').innerHTML = `Confirm Payment: ${price} THB`
+document.getElementById("subtotal").innerHTML = price;
+document.getElementById("total").innerHTML = price;
+document.getElementById("confirm").innerHTML = `Confirm Payment: ${price} THB`;
 
-document.getElementById('confirm').addEventListener('click',function(){
-    alert('Your total amount is: ' + price + ' THB')
-    location.href = `index.html`
-})
-document.getElementById('backBtn').addEventListener('click',function(){
-    location.href = `cart.html`
-})
+document.getElementById("confirm").addEventListener("click", function () {
+  alert("Your total amount is: " + price + " THB");
+  location.href = `index.html`;
+});
+document.getElementById("backBtn").addEventListener("click", function () {
+  location.href = `cart.html`;
+});

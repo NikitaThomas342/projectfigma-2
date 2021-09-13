@@ -52,12 +52,11 @@ body {
 #summaryBody {
   background-color: white;
   margin-top: 20px;
-  
 }
 #logo2 {
   display: none;
 }
-#rectangle{
-  width:300px;
-  height:300px;
+#rectangle {
+  width: 300px;
+  height: 300px;
 }

@@ -1,10 +1,10 @@
-var totalprice = 0
-const output = document.getElementById('output')
-const getCartItems = async () =>{
-    const items = JSON.parse(localStorage.getItem('items'))
-    for(let i = 0;i<items.length;i++){
-        try{
-            let temp = `<div class="p-2">
+var totalprice = 0;
+const output = document.getElementById("output");
+const getCartItems = async () => {
+  const items = JSON.parse(localStorage.getItem("items"));
+  for (let i = 0; i < items.length; i++) {
+    try {
+      let temp = `<div class="p-2">
                             <div alt="items" class="d-flex flex-row justify-content-around">
                                 <div class="p-2">
                                     <img src="${items[i].prdImageUrl}" id="productinbag-img" style="width: 230px; height: 230px;">
@@ -48,36 +48,36 @@ const getCartItems = async () =>{
                                     </div>
                                 </div>
                             </div>
-                        </div>`
-            output.innerHTML += temp
-            let id = 'item' + i
-            document.getElementById(id).addEventListener('click',function(){
-                var r = confirm('Delete item?')
-                if(r){
-                    deleteItem(i)
-                }
-                alert('Delete Success')
-            })
-            totalprice += parseInt(items[i].prdPrice)
-        } catch (error) {
-            console.log('error',error)
+                        </div>`;
+      output.innerHTML += temp;
+      let id = "item" + i;
+      document.getElementById(id).addEventListener("click", function () {
+        var r = confirm("Delete item?");
+        if (r) {
+          deleteItem(i);
         }
+        alert("Delete Success");
+      });
+      totalprice += parseInt(items[i].prdPrice);
+    } catch (error) {
+      console.log("error", error);
     }
-    document.getElementById('subtotal').innerHTML = totalprice
-    document.getElementById('total').innerHTML = totalprice
+  }
+  document.getElementById("subtotal").innerHTML = totalprice;
+  document.getElementById("total").innerHTML = totalprice;
+};
+
+getCartItems();
+
+function deleteItem(index) {
+  const items = JSON.parse(localStorage.getItem("items"));
+  delete items[index];
+  localStorage.setItem("items", JSON.stringify(items));
+  output.innerHTML = "";
+  totalprice = 0;
+  getCartItems();
 }
 
-getCartItems()
-
-function deleteItem(index){
-    const items = JSON.parse(localStorage.getItem('items'))
-    delete items[index]
-    localStorage.setItem('items', JSON.stringify(items));
-    output.innerHTML = ''
-    totalprice = 0
-    getCartItems()
-}
-
-document.getElementById('checkout').addEventListener('click',function(){
-    location.href = `payment.html?price=${totalprice}`;
-})
+document.getElementById("checkout").addEventListener("click", function () {
+  location.href = `payment.html?price=${totalprice}`;
+});
