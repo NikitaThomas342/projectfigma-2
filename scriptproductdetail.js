@@ -53,7 +53,7 @@ function addItem(id, name, price, size, image, detail) {
     prdSize: size,
     prdImageUrl: image,
     txtDetail: detail,
-    quantity: 1
+    quantity: 1,
   };
 
   let finItem = oldItems.concat(newItem);
